@@ -15,20 +15,22 @@ body{
 }
 
 header{
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10%;
+    padding: 2.5rem 15%;
     width: 100%;
     position: fixed;
-    background-color: transparent;
+    background-color: #212121;
     z-index: 10;
+    box-shadow: 0rem 0rem 0.5rem 0rem #1a1a1a;
 }
 
 .logo{
     font-family: "Macondo", cursive;
-    color: #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3rem;
     text-decoration: none;
     font-weight: 600;
@@ -119,7 +121,7 @@ nav i{
     text-decoration: none;
 }
 
-.home-content button{
+.button-blue{
     border: none;
     border-radius: 3rem;
     width: 20rem;
@@ -132,7 +134,7 @@ nav i{
     box-shadow: 0rem 0rem 1rem 0rem #14ffc4;
 }
 
-.home-content button:hover{
+.button-blue:hover{
     background: linear-gradient(-20deg, rgb(0, 156, 117), rgb(0, 105, 79) 80%);
     cursor: pointer;
     box-shadow: 0rem 0rem 1rem 0rem #009c75;
@@ -154,8 +156,8 @@ nav i{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background: #313131;
-    box-shadow: 0rem -0rem 0.5rem 0rem #313131;
+    background: #212121;
+    box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
 }
 
 .about-content{
@@ -185,26 +187,6 @@ nav i{
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 3rem;
-}
-
-.about-content button{
-    border: none;
-    border-radius: 3rem;
-    width: 20rem;
-    height: 6rem;
-    font-size: 2rem;
-    color: white;
-    font-weight: 600;
-    background: linear-gradient(-20deg, rgb(20, 255, 196), rgb(19, 153, 119) 80%);
-    cursor: pointer;
-    box-shadow: 0rem 0rem 1rem 0rem #14ffc4;
-}
-
-.about-content button:hover{
-    background: linear-gradient(-20deg, rgb(0, 156, 117), rgb(0, 105, 79) 80%);
-    cursor: pointer;
-    box-shadow: 0rem 0rem 1rem 0rem #009c75;
-    transition: 0.5s;
 }
 
 .about-img img{
@@ -251,7 +233,7 @@ nav i{
 
 
 .projects{
-    min-height: 110vh;
+    min-height: 115vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -280,7 +262,7 @@ nav i{
     display: flex;
     flex-direction: column;
     background: #1a1a1a;
-    height: 75rem;
+    height: 80rem;
     border-radius: 2rem;
     color: white;
     box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
@@ -316,20 +298,17 @@ nav i{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 4rem;
     gap: 3rem;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.projects-info .fa-html5{
-    color: rgb(255, 92, 32);
-}
-
-.projects-info .fa-css3-alt{
-    color: rgb(68, 155, 255);
-}
-
-.projects-info .fa-js{
-    color: rgb(243, 243, 2);
+.projects-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* Espaçamento entre os ícones e o botão */
 }
 
 /* =========================CONTACT========================= */
@@ -383,7 +362,8 @@ nav i{
     font-weight: 500;
 }
 
-.contact-formulier input, textarea{
+.contact-msg input, textarea{
+    display: flex;
     width: 40rem;
     background: transparent;
     margin-bottom: 2rem;
@@ -396,16 +376,16 @@ nav i{
     font-weight: 500;
 }
 
-.contact-formulier input{
+.contact-msg input{
     height: 5rem;
 }
 
-.contact-formulier textarea{
+.contact-msg textarea{
     height: 10rem;
 }
 
 
-.contact-formulier button{
+.contact-msg button{
     border: none;
     border-radius: 1rem;
     width: 40rem;
@@ -418,7 +398,7 @@ nav i{
     box-shadow: 0rem 0rem 1rem 0rem #14ffc4;
 }
 
-.contact-formulier button:hover{
+.contact-msg button:hover{
     background: linear-gradient(-20deg, rgb(0, 156, 117), rgb(0, 105, 79) 80%);
     cursor: pointer;
     box-shadow: 0rem 0rem 1rem 0rem #009c75;

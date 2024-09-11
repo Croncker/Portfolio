@@ -38,7 +38,7 @@
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/Croncker"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href='#contact'><button>Contact Me</button></a>
+            <a href='#contact'><button class="button-blue">Contact Me</button></a>
         </div>
         <div class="home-img">
             <img src="images/teste4.png" alt="">
@@ -52,7 +52,7 @@
             <h1>About <span>Me</span></h1>
             <h3>Front-end Developer</h3>
             <p>My name is Lucca, I'm 19 years old, and I have a background that is both Dutch and Brazilian. I'm fluent in Dutch and Portuguese, and I also speak conversational English and Spanish. For the past two years, I've been studying Software Development at Mediacollege, where I’ve been honing my technical skills. Alongside my studies, I work as a Traffic Manager in the digital marketing sector, where I’ve gained one year of experience. Currently, I live in Amsterdam, where I continue to deepen my knowledge in both technology and marketing to further expand my expertise.</p>
-            <a href='#skills'><button>Read More</button></a>
+            <a href='#skills'><button class="button-blue">Read More</button></a>
         </div>
     </section>
     <section class="skills" id="skills">
@@ -79,28 +79,49 @@
         <h1>Completed Projects</h1>
         <div class="projects-container">
             <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
+                <img src="images/noimage.png" alt="">
+                <div class="projects-content">
+                    <h2>Index Project</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <div class="projects-icons">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
+                    </div>
+                </div>
             </div>
             <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
+                <img src="images/noimage.png" alt="">
+                <div class="projects-content">
+                    <h2>Index Project</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <div class="projects-icons">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
+                    </div>
+                </div>
             </div>
             <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
-            </div>
-            <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
-            </div>
-            <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
-            </div>
-            <div class="projects-info">
-                <img src="images/semfoto.png" alt="">
-                <h2></h2>
+                <img src="images/noimage.png" alt="">
+                <div class="projects-content">
+                    <h2>Index Project</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <div class="projects-icons">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +131,7 @@
                 <h1>Contact Info</h1>
                 <div class="contact-info2">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p>Amsterdam, North Holland, Netherlands</p>
+                    <p>Amsterdam, Noord Holland, Nederland</p>
                 </div>
                 <div class="contact-info2">
                     <i class="fa-solid fa-envelope"></i>
@@ -126,17 +147,12 @@
                 </div>
             </div>
             <div class="contact-formulier">
-                <form action="" method="post">
-                    <div>
-                        <input type="text" id="nome" placeholder="Enter your name" />
-                    </div>
-                    <div>
-                        <input type="email" id="email" placeholder="Enter your email" />
-                    </div>
-                    <div>
-                        <textarea id="msg" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button>Send Message</button>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-msg">
+                    <input type="hidden" name="access_key" value="44d458e2-8166-49d5-9b8f-fd7a50116fd8">
+                    <input type="text" name="name" id="nome" placeholder="Vul uw naam in" />
+                    <input type="email" name="email" id="email" placeholder="Voer uw e-mailadres in" />
+                    <textarea id="msg" name="message" placeholder="Voer uw bericht in"></textarea>
+                    <button type="submit">Verzenden</button>
                 </form>
             </div>
         </div>

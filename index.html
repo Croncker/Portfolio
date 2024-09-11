@@ -39,7 +39,7 @@
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/Croncker"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href='#contact'><button>Contact Me</button></a>
+            <a href='#contact'><button class="button-blue">Contact Me</button></a>
         </div>
         <div class="home-img">
             <img src="images/teste4.png" alt="">
@@ -53,7 +53,7 @@
             <h1>Over <span>Mij</span></h1>
             <h3>Front-end Developer</h3>
             <p>Mijn naam is Lucca, 19 jaar oud, met een achtergrond die zowel Nederlands als Braziliaans is. Ik ben vloeiend in Nederlands en Portugees, en spreek daarnaast ook Engels en Spaans op conversatieniveau. Al twee jaar volg ik de opleiding Software Development aan het Mediacollege, waar ik mijn technische vaardigheden verder ontwikkel. Naast mijn studie werk ik als Traffic Manager in de digitale marketingsector, waar ik nu één jaar ervaring in heb opgebouwd. Op dit moment woon ik in Amsterdam, waar ik mij blijf verdiepen in zowel technologie als marketing om mijn expertise uit te breiden.</p>
-            <a href='#skills'><button>Lees Meer</button></a>
+            <a href='#skills'><button class="button-blue">Lees Meer</button></a>
         </div>
     </section>
     <section class="skills" id="skills">
@@ -89,17 +89,8 @@
                         <i class="fa-brands fa-css3-alt"></i>
                         <i class="fa-brands fa-js"></i>
                     </div>
-                </div>
-            </div>
-            <div class="projects-info">
-                <img src="images/noimage.png" alt="">
-                <div class="projects-content">
-                    <h2>Index Project</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
-                    <div class="projects-icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
                     </div>
                 </div>
             </div>
@@ -113,7 +104,24 @@
                         <i class="fa-brands fa-css3-alt"></i>
                         <i class="fa-brands fa-js"></i>
                     </div>
-
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-info">
+                <img src="images/noimage.png" alt="">
+                <div class="projects-content">
+                    <h2>Index Project</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <div class="projects-icons">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="projects-button">
+                        <a href=''><button class="button-blue">GitHub</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,17 +149,12 @@
                 </div>
             </div>
             <div class="contact-formulier">
-                <form action="" method="post">
-                    <div>
-                        <input type="text" id="nome" placeholder="Vul uw naam in" />
-                    </div>
-                    <div>
-                        <input type="email" id="email" placeholder="Voer uw e-mailadres in" />
-                    </div>
-                    <div>
-                        <textarea id="msg" placeholder="Voer uw bericht in"></textarea>
-                    </div>
-                    <button>Verzenden</button>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-msg">
+                    <input type="hidden" name="access_key" value="44d458e2-8166-49d5-9b8f-fd7a50116fd8">
+                    <input type="text" name="name" id="nome" placeholder="Vul uw naam in" />
+                    <input type="email" name="email" id="email" placeholder="Voer uw e-mailadres in" />
+                    <textarea id="msg" name="message" placeholder="Voer uw bericht in"></textarea>
+                    <button type="submit">Verzenden</button>
                 </form>
             </div>
         </div>
