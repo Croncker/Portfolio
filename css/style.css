@@ -9,9 +9,16 @@ html{
 }
 
 body{
-    background: #212121;
     overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    /*--primary-color: #212121;
+    --secondery-color: #ffffff;*/
+
+    /*--primary-color: #ffffff;
+    --secondery-color: #212121;*/
 }
 
 header{
@@ -21,7 +28,7 @@ header{
     padding: 2.5rem 15%;
     width: 100%;
     position: fixed;
-    background-color: #212121;
+    background: var(--primary-color);
     z-index: 10;
     box-shadow: 0rem 0rem 0.5rem 0rem #1a1a1a;
 }
@@ -38,7 +45,7 @@ header{
 
 nav a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secondery-color);
     font-size: 2rem;
     font-weight: 500;
     margin-left: 6rem;
@@ -57,7 +64,7 @@ nav a:last-child:hover {
 }
 
 nav i{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #14ffc4;
 }
 
@@ -67,6 +74,7 @@ nav i{
     justify-content: center;
     align-items: center;
     gap: 8rem;
+    background: var(--primary-color);
 }
 
 .home-content{
@@ -74,13 +82,15 @@ nav i{
 }
 
 .home-content h1{
-    color: white;
+    color: var(--secondery-color);
     font-size: 5rem;
     font-weight: 800;
 }
 
 .home-content span{
-    color: #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 5rem;
 }
 
@@ -93,7 +103,7 @@ nav i{
 
 .home-content p{
     max-width: 85%;
-    color: white;
+    color: var(--secondery-color);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 3rem;
@@ -127,10 +137,11 @@ nav i{
     width: 20rem;
     height: 6rem;
     font-size: 2rem;
-    color: white;
+    color: var(--secondery-color);
     font-weight: 600;
     background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     cursor: pointer;
+    color: #ffffff;
     box-shadow: 0rem 0rem 1rem 0rem #14ffc4;
 }
 
@@ -156,7 +167,7 @@ nav i{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background: #212121;
+    background: var(--primary-color);
     box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
 }
 
@@ -165,13 +176,15 @@ nav i{
 }
 
 .about-content h1{
-    color: white;
+    color: var(--secondery-color);
     font-size: 5rem;
     font-weight: 800;
 }
 
 .about-content span{
-    color: #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 5rem;
 }
 
@@ -179,11 +192,11 @@ nav i{
     color: #14ffc4;
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .about-content p{
-    color: white;
+    color: var(--secondery-color);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 3rem;
@@ -222,7 +235,7 @@ nav i{
 }
 
 .info2 p{
-    color: white;
+    color: var(--secondery-color);
     font-size: 1.8rem;
     font-weight: 800;
     color: hsla(0, 0%, 100%, 0.75);
@@ -237,6 +250,7 @@ nav i{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: var(--primary-color);
 }
 
 
@@ -261,10 +275,10 @@ nav i{
 .projects-info{
     display: flex;
     flex-direction: column;
-    background: #1a1a1a;
+    background: var(--primary-color);
     height: 80rem;
     border-radius: 2rem;
-    color: white;
+    color: var(--secondery-color);
     box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
 }
 
@@ -319,6 +333,7 @@ nav i{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--primary-color);
     box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
 }
 
@@ -328,7 +343,7 @@ nav i{
 
 
 .contact-info h1{
-    color: white;
+    color: var(--primary-color);
     font-size: 5rem;
     font-weight: 800;
     
@@ -357,7 +372,7 @@ nav i{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--secondery-color);
     font-size: 2rem;
     font-weight: 500;
 }
@@ -371,7 +386,7 @@ nav i{
     padding: 1rem;
     border-radius: 1rem;
     font-family: "Open Sans", sans-serif;
-    color: white;
+    color: var(--secondery-color);
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -391,7 +406,7 @@ nav i{
     width: 40rem;
     height: 5.5rem;
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     cursor: pointer;
