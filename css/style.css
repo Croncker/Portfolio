@@ -16,10 +16,16 @@ body{
 :root{
     --primary-color: #212121;
     --secondery-color: #ffffff;
-
-    /*--primary-color: #ffffff;
-    --secondery-color: #212121;*/
+    --shadow-color: #1a1a1a;
+    --button-color: #212121;
 }
+.white-theme{
+    --primary-color: #ffffff;
+    --secondery-color: #212121;
+    --shadow-color: #d6d6d6;
+    --button-color: #ffffff;
+}
+
 
 header{
     display: flex;
@@ -30,7 +36,7 @@ header{
     position: fixed;
     background: var(--primary-color);
     z-index: 10;
-    box-shadow: 0rem 0rem 0.5rem 0rem #1a1a1a;
+    box-shadow: 0rem 0rem 0.5rem 0rem var(--shadow-color);
 }
 
 .logo{
@@ -95,10 +101,12 @@ nav i{
 }
 
 .home-content h3{
-    color: #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .home-content p{
@@ -122,9 +130,10 @@ nav i{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    border: 2px solid #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     border-radius: 50%;
-    color: #14ffc4;
+    color: var(--button-color);
+    box-shadow: 0rem 0rem 0.5rem 0rem #139977;
 }
 
 .icons-platforms a {
@@ -137,11 +146,10 @@ nav i{
     width: 20rem;
     height: 6rem;
     font-size: 2rem;
-    color: var(--secondery-color);
+    color: var(--button-color);
     font-weight: 600;
     background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     cursor: pointer;
-    color: #ffffff;
     box-shadow: 0rem 0rem 1rem 0rem #14ffc4;
 }
 
@@ -168,7 +176,7 @@ nav i{
     align-items: center;
     gap: 8rem;
     background: var(--primary-color);
-    box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
+    box-shadow: 0rem 0rem 1rem 0rem var(--shadow-color);
 }
 
 .about-content{
@@ -189,7 +197,9 @@ nav i{
 }
 
 .about-content h3{
-    color: #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 1000;
@@ -279,7 +289,7 @@ nav i{
     height: 80rem;
     border-radius: 2rem;
     color: var(--secondery-color);
-    box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
+    box-shadow: 0rem 0rem 1rem 0rem var(--shadow-color);
 }
 
 .projects-container img{
@@ -334,7 +344,7 @@ nav i{
     justify-content: center;
     align-items: center;
     background: var(--primary-color);
-    box-shadow: 0rem 0rem 1rem 0rem #1a1a1a;
+    box-shadow: 0rem 0rem 1rem 0rem var(--shadow-color);
 }
 
 .info{
@@ -363,9 +373,10 @@ nav i{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    border: 2px solid #14ffc4;
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     border-radius: 50%;
-    color: #14ffc4;
+    color: var(--button-color);
+    box-shadow: 0rem 0rem 0.5rem 0rem #139977;
 }
 
 .contact-info p{
@@ -406,7 +417,7 @@ nav i{
     width: 40rem;
     height: 5.5rem;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--button-color);
     font-weight: 600;
     background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
     cursor: pointer;
