@@ -1,132 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Fontes e Icones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/85df0d582d.js" crossorigin="anonymous"></script>
+    <!-- CSS e JS -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
-    <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <a href="" class="logo">Lucca</a>
-
+        <a href="#" class="logo">Lucca</a>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="engels.html">ENG</a>
-            <a href="#"><i class="fa-solid fa-sun" id="icon"></i></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="engels.html">ENG</a></li>
+                <li><a href="#"><i class="fa-solid fa-sun" id="icon"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+        
     </header>
+
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hallo, Mijn naam is <span>Lucca</span></h1>
             <h3>Front-end Developer</h3>
             <p>Welkom op mijn portfolio! Met passie voor webontwikkeling creëer ik moderne en responsieve websites die mijn ideeën tot leven brengen.</p>
-        </p>
             <div class="icons-platforms">
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/lucvsoest/"><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/Croncker"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href='#contact'><button class="button-blue">Contact Me</button></a>
+            <a href="#contact"><button class="button-blue">Contact Me</button></a>
         </div>
         <div class="home-img">
-            <img src="images/teste4.png" alt="">
+            <img src="images/teste4.png" alt="Lucca">
         </div>
     </section>
+
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/teste4.png" alt="">
+            <img src="images/teste4.png" alt="Sobre Lucca">
         </div>
         <div class="about-content">
             <h1>Over <span>Mij</span></h1>
             <h3>Front-end Developer</h3>
             <p>Mijn naam is Lucca, 19 jaar oud, met een achtergrond die zowel Nederlands als Braziliaans is. Ik ben vloeiend in Nederlands en Portugees, en spreek daarnaast ook Engels en Spaans op conversatieniveau. Al twee jaar volg ik de opleiding Software Development aan het Mediacollege, waar ik mijn technische vaardigheden verder ontwikkel. Naast mijn studie werk ik als Traffic Manager in de digitale marketingsector, waar ik nu één jaar ervaring in heb opgebouwd. Op dit moment woon ik in Amsterdam, waar ik mij blijf verdiepen in zowel technologie als marketing om mijn expertise uit te breiden.</p>
-            <a href='#skills'><button class="button-blue">Lees Meer</button></a>
+            <a href="#skills"><button class="button-blue">Lees Meer</button></a>
         </div>
     </section>
+
     <section class="skills" id="skills">
         <div class="info">
             <div class="info2">
-              <h2>HTML</h2>
-              <p>2 Jaar Ervaring</p>
+                <h2>HTML</h2>
+                <p>2 Jaar Ervaring</p>
             </div>
             <div class="info2">
-              <h2>CSS</h2>
-              <p>2 Jaar Ervaring</p>
+                <h2>CSS</h2>
+                <p>2 Jaar Ervaring</p>
             </div>
             <div class="info2">
-              <h2>Javascript</h2>
-              <p>1 Jaar Ervaring</p>
+                <h2>Javascript</h2>
+                <p>1 Jaar Ervaring</p>
             </div>
             <div class="info2">
                 <h2>Traffic Manager</h2>
                 <p>1 Jaar Ervaring</p>
-              </div>
+            </div>
         </div>
     </section>
+
     <section class="projects" id="projects">
         <h1>Afgeronde Projecten</h1>
         <div class="projects-container">
             <div class="projects-info">
-                <img src="images/noimage.png" alt="">
+                <img src="images/noimage.png" alt="Project 1">
                 <div class="projects-content">
                     <h2>Index Project</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. rem veritatis quidem distinctio a, ullam ipsum,</p>
                     <div class="projects-icons">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
                         <i class="fa-brands fa-js"></i>
                     </div>
                     <div class="projects-button">
-                        <a href=''><button class="button-blue">GitHub</button></a>
+                        <a href="#"><button class="button-blue">GitHub</button></a>
                     </div>
                 </div>
             </div>
             <div class="projects-info">
-                <img src="images/noimage.png" alt="">
+                <img src="images/noimage.png" alt="Project 1">
                 <div class="projects-content">
                     <h2>Index Project</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. rem veritatis quidem distinctio a, ullam ipsum,</p>
                     <div class="projects-icons">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
                         <i class="fa-brands fa-js"></i>
                     </div>
                     <div class="projects-button">
-                        <a href=''><button class="button-blue">GitHub</button></a>
+                        <a href="#"><button class="button-blue">GitHub</button></a>
                     </div>
                 </div>
             </div>
             <div class="projects-info">
-                <img src="images/noimage.png" alt="">
+                <img src="images/noimage.png" alt="Project 1">
                 <div class="projects-content">
                     <h2>Index Project</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam commodi laborum repellat voluptate dolor debitis nemo maxime similique doloribus rem veritatis quidem distinctio a, ullam ipsum, architecto quod cum. rem veritatis quidem distinctio a, ullam ipsum,</p>
                     <div class="projects-icons">
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
                         <i class="fa-brands fa-js"></i>
                     </div>
                     <div class="projects-button">
-                        <a href=''><button class="button-blue">GitHub</button></a>
+                        <a href="#"><button class="button-blue">GitHub</button></a>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
-    
+
     <footer class="contact" id="contact">
         <div class="info">
             <div class="contact-info">
@@ -151,9 +164,9 @@
             <div class="contact-formulier">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-msg">
                     <input type="hidden" name="access_key" value="44d458e2-8166-49d5-9b8f-fd7a50116fd8">
-                    <input type="text" name="name" id="nome" placeholder="Vul uw naam in" />
-                    <input type="email" name="email" id="email" placeholder="Voer uw e-mailadres in" />
-                    <textarea id="msg" name="message" placeholder="Voer uw bericht in"></textarea>
+                    <input type="text" name="name" id="nome" placeholder="Vul uw naam in" required />
+                    <input type="email" name="email" id="email" placeholder="Voer uw e-mailadres in" required />
+                    <textarea id="msg" name="message" placeholder="Voer uw bericht in" required></textarea>
                     <button type="submit">Verzenden</button>
                 </form>
             </div>

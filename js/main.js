@@ -9,3 +9,11 @@ icon.onclick = function() {
         icon.classList.replace("fa-moon", "fa-sun"); // Volta o ícone original
     }
 }
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    hamburger.classList.toggle('toggle');
+});
