@@ -298,7 +298,6 @@ nav i {
 }
 
 .projects-info {
-    display: flex;
     flex-direction: column;
     background: var(--primary-color);
     border-radius: 2rem;
@@ -306,6 +305,12 @@ nav i {
     box-shadow: 0 0 1rem var(--shadow-color);
     overflow: hidden;
     transition: transform 0.3s;
+    flex: 0 0 30%;
+    display: none;
+}
+
+.projects-info.active {
+    display: block;
 }
 
 .projects-info:hover {
@@ -355,6 +360,28 @@ nav i {
     justify-content: center;
     margin-bottom: 2rem;
 }
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background: linear-gradient(-20deg, rgb(20, 255, 196), #139977 80%);
+}
+
 
 /* ==============================Contact============================== */
 .contact {
@@ -541,7 +568,7 @@ nav i {
 
     .projects-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 3rem;
+        gap: 4rem;
     }
 }
 
@@ -563,13 +590,36 @@ nav i {
         gap: 4rem;
     }
 
-    .about-img img {
-        display: none;
+    .home-content {
+        order: 2;
+        max-width: 80%;
+        align-items: center;
     }
 
-    .home-content,
-    .about-content {
-        max-width: 80%;
+    .home-img {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+    }
+
+    .icons-platforms {
+        justify-content: center;
+    }
+
+    .home-content p {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img img {
+        display: none;
     }
 
     .skills .info {
@@ -578,8 +628,9 @@ nav i {
     }
 
     .projects-container {
+        width: 80%;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .contact .info {
@@ -624,10 +675,30 @@ nav i {
         font-size: 3.5rem;
     }
 
+    .home-content,
+    .about-content {
+        order: 2;
+        max-width: 90%;
+    }
+
+    .home-img {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+    }
+
     .about-img img {
         display: none;
     }
-    
+
     .home-content h3,
     .about-content h3 {
         font-size: 1.8rem;
