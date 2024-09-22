@@ -359,6 +359,13 @@ nav i {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.projects-button .button-blue{
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.6rem;
 }
 
 .slider-nav {
@@ -371,7 +378,7 @@ nav i {
     height: 1.5rem;
     width: 1.5rem;
     margin: 0 0.5rem;
-    background-color: white;
+    background-color: var(--secondery-color);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
