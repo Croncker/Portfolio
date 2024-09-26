@@ -256,7 +256,21 @@ nav i {
 
 .info2 {
     text-align: center;
-    flex: 1 1 10rem;
+    flex: 1 1 22%;
+    max-width: 22%;
+}
+
+.info2 i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(-20deg,rgb(0, 255, 191), rgb(0, 255, 191) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
 .info2 h2 {
@@ -271,6 +285,7 @@ nav i {
     font-size: 1.8rem;
     font-weight: 500;
 }
+
 
 /* ==============================Projects============================== */
 .projects {

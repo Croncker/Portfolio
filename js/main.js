@@ -24,6 +24,7 @@ hamburger.addEventListener('click', () => {
 let dots = document.querySelectorAll('.dot');
 let projects = document.querySelectorAll('.projects-info');
 
+
 function currentSlide(slideIndex) {
     projects.forEach((project) => {
         project.style.display = 'none';
@@ -52,5 +53,7 @@ function currentSlide(slideIndex) {
 }
 
 currentSlide(1);
+
+
 
 
