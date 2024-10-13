@@ -290,7 +290,6 @@ nav i {
     transition: opacity 0.3s ease;
 }
 
-/* O texto central da porcentagem */
 .info2::before {
     content: attr(data-percent);
     position: absolute;
@@ -365,8 +364,8 @@ nav i {
     --percent: 30;
 }
 
-[data-percent="80%"] {
-    --percent: 80;
+[data-percent="70%"] {
+    --percent: 70;
 }
 
 [data-percent="65%"] {
